@@ -1,3 +1,4 @@
+/* Flex Layout */
 .inline-block {
     display: inline-block;
     vertical-align: top;
@@ -52,4 +53,26 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+    }
+
+    nav {
+        width: 100%; /* Make navigation full width */
+    }
+
+    ul {
+        width: 100%; /* Make the list full width */
+    }
 }
